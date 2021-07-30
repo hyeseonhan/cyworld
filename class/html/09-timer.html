@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        // let timer = 10;
+        // setInterval(function(){
+        //     if(timer > 0){
+        //        timer = timer - 1
+        //        console.log(timer)  
+        //     }
+        // },1000)
+
+        function button(){
+            let Auth = String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+            document.getElementById("number").innerText=Auth
+            
+            let timer = 10;
+            setInterval(function(){
+                if(timer > 0){
+                  timer = timer - 1
+                  document.getElementById("minute").innerText=timer
+                }
+        },1000)
+        }    
+    </script>
+</head>
+<body>
+    <span id="number" >000000</span>
+    <button onclick="button()">인증번호 전송</button>
+    <div id="minute" >00</div>
+    <!-- <button onclick="button()">인증완료</button> -->
+</body>
+</html>

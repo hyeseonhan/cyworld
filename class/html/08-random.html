@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    //  6자리 문자
+       let Auth = String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+       console.log(Auth)        
+    //  function->button->aaa
+       function aaa (){
+         document.getElementById("hello").innerText = "반갑습니다"   
+       }
+    //    innerText 내용을 바꿔줌
+       
+       function bbb (){
+         let Auth = String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+         document.getElementById("number").innerText=Auth
+       }
+    //   Auth 이름에 불과. 인증번호 버튼 클릭->function 실행->random 숫자 생성 
+    //   document(html)로 가져가서 인자(id). body에서 id를 가져옴. 
+    //   000000 공간만 가져오기 위해서 innerText 사용
+    //   let이 function 밖에 있으면 클릭하면 한번만 숫자가 바뀜. function 안에 있어야 무한대로 랜덤 숫자가 나옴
+   //  2.innerText : 필요한 부분에 Auth를 가져옴
+    </script>
+</head>
+<body
+    <div id="hello">안녕하세요</div>
+    <button onclick="aaa()">클릭</button><br></br>
+
+    <span id="number">000000</span>
+    <button onclick="bbb()">인증번호</button>
+
+   <!-- 1/onclick 클릭햇을 때 자바스크립트에 연결 -->
+</body>
+</html>

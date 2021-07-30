@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        // let timer = 10;
+        // setInterval(function(){
+        //     if(timer > 0){
+        //        timer = timer - 1
+        //        console.log(timer)  
+        //     }
+        // },1000)
+
+        function timer(){
+            let Auth = String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+            document.getElementById("auth").innerText=Auth
+            
+            let timer = 180;
+            setInterval(function(){
+                if(timer > -1){
+                    let min = Math.floor(timer/60)
+                    let sec = String(timer%60).padStart(2,"0")
+                    timer = timer -1 
+                    document.getElementById("min").innerText=min
+                    document.getElementById("sec").innerText=sec
+                }
+                
+        },100)
+        }    
+    </script>
+</head>
+<body>
+    <span id="auth" >000000</span>
+    <button onclick="timer()">인증번호 전송</button>
+    <span id="min" >3</span>
+    <span>:</span>
+    <span id="sec">00</span>
+</body>
+</html>

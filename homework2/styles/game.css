@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    padding: 20px 30px 30px 30px;
+}
+
+.wrapper__header {
+    width: 100%;
+    height: 18px;
+    /* border: 1px solid blue; */
+}
+
+.name {
+    padding-bottom: 5px;
+
+}
+
+.game {
+    font-size: 15px ;
+    font-weight: bold;
+    color: rgb(0, 183, 255);
+}
+
+.today {
+    font-size: 5px ;
+}
+
+.line {
+    border-top: 1px solid gray  ;
+   
+}
+
+.wrapper__body {
+    width: 100%;
+    height: 376px;
+    /* border: 1px solid green; */
+    display: flex;          
+     /*가로정렬  */
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    /* 양끝정렬 */
+    padding-top: 20px;
+}
+
+.wrapper__word {
+    width: 222px;
+    height: 168px;
+    border: 1px solid grey;
+    background-color: #f1f0ee;
+    border-radius: 15px;  
+    /* 정렬은 부모인 wrapper__body에 해줘야함 */
+}
+
+.img_word {
+    width: 37px;
+    margin-left: 96px;
+    margin-top: 18px;
+}
+
+.endword {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 90px;
+    margin-top: 5px;
+}
+
+.newbiz {
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+    margin-left: 69px;
+    margin-top: 7px;
+}
+
+.aaa {
+    font-size: 10px;
+    font-weight: bold;
+    width: 125px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-left: 27px;
+    margin-right: 3px;
+    margin-top: 11px;
+    padding: 5px;
+}
+
+.bbb {
+    font-size: 10px;
+    font-weight: bold;
+    width: 33px;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.result {
+    color: gray;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 15px;
+
+}
+
+.wrapper__lotto {
+    width: 222px;
+    height: 168px;
+    border: 1px solid grey;
+    background-color: #f1f0ee;
+    border-radius: 15px;   
+    position: relative; 
+}
+
+.img_lotto {
+    width: 33px;
+    margin-left: 94px;
+    margin-top: 15px;
+}
+
+.word_lotto {
+    font-size:  12px;
+    font-weight: bolder;
+    margin-left: 88px;
+    position: absolute;
+    top: 30%;
+    left: 10%; 
+    transform: translate(-50%,-50%);
+}
+
+.press {
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+    margin-left: 73px;
+    margin-top: 8px;
+}
+
+.number {
+    border: 1px solid;
+    border-radius: 7px;
+    width: 144px;
+    margin-left: 36px;
+    margin-top: 13px;
+    padding: 2px 2px 2px 7px ;
+    background-color: yellow;
+}
+
+.random {
+    font-size: 11px;
+    font-weight: bold;
+    word-spacing: 9px;
+}
+
+.button {
+    border: 1px solid;
+    border-radius: 4px;
+    width: 53px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 2px 3px 8px;
+    margin-left: 83px;
+    margin-top: 14px;
+    background-color: white;   
+}
